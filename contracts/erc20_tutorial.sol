@@ -1,12 +1,12 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// '0Seedbitscoin' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
+// Deployed to : 0x46b2706618251b71c7a12017fdE3D0ce3Ab0C584
+// Symbol      : 0 SBT
+// Name        : 0 Seedbitscoin Token
+// Total supply: 700000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract Seedbitscoin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+        symbol = "0Seebitscoin";
+        name = "0 Seedbitscoin Token";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        balances[0x46b2706618251b71c7a12017fdE3D0ce3Ab0C584] = _totalSupply;
+        emit Transfer(address(0), 0x46b2706618251b71c7a12017fdE3D0ce3Ab0C584, _totalSupply);
     }
 
 
